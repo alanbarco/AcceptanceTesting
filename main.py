@@ -26,7 +26,7 @@ def add_task():
     print("Task added correctly!")
 
 def list_tasks():
-    print("#\t | NAME\t | PRIORITY\t | STATE| DATE")
+    print("#\t | NAME\t\t | PRIORITY\t | STATE| DATE")
     for i in range(len(tasks_name)):
         print(i,"\t",tasks_name[i],"\t",tasks_prior[i],"\t", tasks_state[i], tasks_date[i])
 
@@ -52,9 +52,36 @@ def delete_task():
     del tasks_date[i_task]
     print("Task deleted!")
 
+def validate_edit_task(i_option):
+    if(i_option > 2 or i_option < 0):
+        raise ValueError("ERROR: The option is incorrect")
+    
+def opt_edit_task():
+    print("1. Edit name")
+    print("2. Edit priority")
+    i_option = int(input("Select a option: "))
+    validate_edit_task(i_option)
+    try:
+        validate_edit_task(i_option)
+    except ValueError as e:
+        print(e)
+    return i_option
+
+def edit_task():
+    list_tasks()
+    i_task = int(input("Select the task you want to edit: "))
+    i_option = opt_edit_task()
+    if(i_option == 1):
+        tasks_name[i_task] = input("Write the new name: ")
+    elif(i_option == 2):
+        tasks_prior[i_task] = input("Write the new priority: ")
+    print("Task edited correctly!")
+def exit():
+    print("Bye!")
+
 if __name__ == '__main__':
     i_option = 0
-    cases = {1: add_task, 2: list_tasks, 3: complete_task, 4: clear_all_tasks, 5: delete_task}
+    cases = {1: add_task, 2: list_tasks, 3: complete_task, 4: clear_all_tasks, 5: delete_task, 6: edit_task, 7:exit}
     while i_option != 7:
         print("\n******TO DO LIST MANAGER******")
         print_menu()
