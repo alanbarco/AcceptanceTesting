@@ -1,3 +1,393 @@
 [
-{"keyword": "Feature", "name": "Dining Experience Manager", "tags": [], "location": "features/dining_experience.feature:1", "status": "passed", "elements": [{"type": "scenario", "keyword": "Scenario", "name": "User enters a valid quantity", "tags": [], "location": "features/dining_experience.feature:3", "steps": [{"keyword": "Given", "step_type": "given", "name": "the system has a meal \"Pizza familiar\"", "location": "features/dining_experience.feature:4", "match": {"location": "features/steps/dining_experience_steps.py:4", "arguments": [{"value": "Pizza familiar", "name": "meal"}]}, "result": {"status": "passed", "duration": 5.91278076171875e-05}}, {"keyword": "When", "step_type": "when", "name": "the user enters a quantity \"2\" for the meal", "location": "features/dining_experience.feature:5", "match": {"location": "features/steps/dining_experience_steps.py:8", "arguments": [{"value": "2", "name": "quantity"}]}, "result": {"status": "passed", "duration": 0.00012302398681640625}}, {"keyword": "Then", "step_type": "then", "name": "the system should accept the quantity", "location": "features/dining_experience.feature:6", "match": {"location": "features/steps/dining_experience_steps.py:12", "arguments": []}, "result": {"status": "passed", "duration": 5.793571472167969e-05}}], "status": "passed"}, {"type": "scenario", "keyword": "Scenario", "name": "User enters zero quantity", "tags": [], "location": "features/dining_experience.feature:8", "steps": [{"keyword": "Given", "step_type": "given", "name": "the system has a meal \"Pizza familiar\"", "location": "features/dining_experience.feature:9", "match": {"location": "features/steps/dining_experience_steps.py:4", "arguments": [{"value": "Pizza familiar", "name": "meal"}]}, "result": {"status": "passed", "duration": 4.8160552978515625e-05}}, {"keyword": "When", "step_type": "when", "name": "the user enters a quantity \"0\" for the meal", "location": "features/dining_experience.feature:10", "match": {"location": "features/steps/dining_experience_steps.py:8", "arguments": [{"value": "0", "name": "quantity"}]}, "result": {"status": "passed", "duration": 6.699562072753906e-05}}, {"keyword": "Then", "step_type": "then", "name": "the system should not accept the quantity and display an error message", "location": "features/dining_experience.feature:11", "match": {"location": "features/steps/dining_experience_steps.py:21", "arguments": []}, "result": {"status": "passed", "duration": 5.2928924560546875e-05}}], "status": "passed"}, {"type": "scenario", "keyword": "Scenario", "name": "User enters a negative quantity", "tags": [], "location": "features/dining_experience.feature:13", "steps": [{"keyword": "Given", "step_type": "given", "name": "the system has a meal \"Pizza familiar\"", "location": "features/dining_experience.feature:14", "match": {"location": "features/steps/dining_experience_steps.py:4", "arguments": [{"value": "Pizza familiar", "name": "meal"}]}, "result": {"status": "passed", "duration": 4.7206878662109375e-05}}, {"keyword": "When", "step_type": "when", "name": "the user enters a quantity \"-1\" for the meal", "location": "features/dining_experience.feature:15", "match": {"location": "features/steps/dining_experience_steps.py:8", "arguments": [{"value": "-1", "name": "quantity"}]}, "result": {"status": "passed", "duration": 6.29425048828125e-05}}, {"keyword": "Then", "step_type": "then", "name": "the system should not accept the quantity and display an error message", "location": "features/dining_experience.feature:16", "match": {"location": "features/steps/dining_experience_steps.py:21", "arguments": []}, "result": {"status": "passed", "duration": 4.696846008300781e-05}}], "status": "passed"}]}
+    {
+        "keyword": "Feature",
+        "name": "Dining Experience Manager",
+        "tags": [],
+        "location": "features/dining_experience.feature:1",
+        "status": "passed",
+        "elements": [
+            {
+                "type": "scenario",
+                "keyword": "Scenario",
+                "name": "User enters a valid quantity",
+                "tags": [],
+                "location": "features/dining_experience.feature:3",
+                "steps": [
+                    {
+                        "keyword": "Given",
+                        "step_type": "given",
+                        "name": "the system has a meal \"Pizza familiar\"",
+                        "location": "features/dining_experience.feature:4",
+                        "match": {
+                            "location": "features/steps/dining_experience_steps.py:4",
+                            "arguments": [
+                                {
+                                    "value": "Pizza familiar",
+                                    "name": "meal"
+                                }
+                            ]
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 6.031990051269531e-05
+                        }
+                    },
+                    {
+                        "keyword": "When",
+                        "step_type": "when",
+                        "name": "the user enters a quantity \"2\" for the meal",
+                        "location": "features/dining_experience.feature:5",
+                        "match": {
+                            "location": "features/steps/dining_experience_steps.py:8",
+                            "arguments": [
+                                {
+                                    "value": "2",
+                                    "name": "quantity"
+                                }
+                            ]
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0001201629638671875
+                        }
+                    },
+                    {
+                        "keyword": "Then",
+                        "step_type": "then",
+                        "name": "the system should accept the quantity",
+                        "location": "features/dining_experience.feature:6",
+                        "match": {
+                            "location": "features/steps/dining_experience_steps.py:12",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 4.982948303222656e-05
+                        }
+                    }
+                ],
+                "status": "passed"
+            },
+            {
+                "type": "scenario",
+                "keyword": "Scenario",
+                "name": "User enters zero quantity",
+                "tags": [],
+                "location": "features/dining_experience.feature:8",
+                "steps": [
+                    {
+                        "keyword": "Given",
+                        "step_type": "given",
+                        "name": "the system has a meal \"Pizza familiar\"",
+                        "location": "features/dining_experience.feature:9",
+                        "match": {
+                            "location": "features/steps/dining_experience_steps.py:4",
+                            "arguments": [
+                                {
+                                    "value": "Pizza familiar",
+                                    "name": "meal"
+                                }
+                            ]
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 4.8160552978515625e-05
+                        }
+                    },
+                    {
+                        "keyword": "When",
+                        "step_type": "when",
+                        "name": "the user enters a quantity \"0\" for the meal",
+                        "location": "features/dining_experience.feature:10",
+                        "match": {
+                            "location": "features/steps/dining_experience_steps.py:8",
+                            "arguments": [
+                                {
+                                    "value": "0",
+                                    "name": "quantity"
+                                }
+                            ]
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 6.604194641113281e-05
+                        }
+                    },
+                    {
+                        "keyword": "Then",
+                        "step_type": "then",
+                        "name": "the system should not accept the quantity and display an error message",
+                        "location": "features/dining_experience.feature:11",
+                        "match": {
+                            "location": "features/steps/dining_experience_steps.py:21",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 4.792213439941406e-05
+                        }
+                    }
+                ],
+                "status": "passed"
+            },
+            {
+                "type": "scenario",
+                "keyword": "Scenario",
+                "name": "User enters a negative quantity",
+                "tags": [],
+                "location": "features/dining_experience.feature:13",
+                "steps": [
+                    {
+                        "keyword": "Given",
+                        "step_type": "given",
+                        "name": "the system has a meal \"Pizza familiar\"",
+                        "location": "features/dining_experience.feature:14",
+                        "match": {
+                            "location": "features/steps/dining_experience_steps.py:4",
+                            "arguments": [
+                                {
+                                    "value": "Pizza familiar",
+                                    "name": "meal"
+                                }
+                            ]
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.00010395050048828125
+                        }
+                    },
+                    {
+                        "keyword": "When",
+                        "step_type": "when",
+                        "name": "the user enters a quantity \"-1\" for the meal",
+                        "location": "features/dining_experience.feature:15",
+                        "match": {
+                            "location": "features/steps/dining_experience_steps.py:8",
+                            "arguments": [
+                                {
+                                    "value": "-1",
+                                    "name": "quantity"
+                                }
+                            ]
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 6.508827209472656e-05
+                        }
+                    },
+                    {
+                        "keyword": "Then",
+                        "step_type": "then",
+                        "name": "the system should not accept the quantity and display an error message",
+                        "location": "features/dining_experience.feature:16",
+                        "match": {
+                            "location": "features/steps/dining_experience_steps.py:21",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 4.696846008300781e-05
+                        }
+                    }
+                ],
+                "status": "passed"
+            },
+            {
+                "type": "scenario",
+                "keyword": "Scenario",
+                "name": "User orders more than 5 meals",
+                "tags": [],
+                "location": "features/dining_experience.feature:17",
+                "steps": [
+                    {
+                        "keyword": "Given",
+                        "step_type": "given",
+                        "name": "the system has a meal \"Pizza familiar\"",
+                        "location": "features/dining_experience.feature:18",
+                        "match": {
+                            "location": "features/steps/dining_experience_steps.py:4",
+                            "arguments": [
+                                {
+                                    "value": "Pizza familiar",
+                                    "name": "meal"
+                                }
+                            ]
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 4.696846008300781e-05
+                        }
+                    },
+                    {
+                        "keyword": "When",
+                        "step_type": "when",
+                        "name": "the user orders a total quantity of \"6\" meals",
+                        "location": "features/dining_experience.feature:19",
+                        "match": {
+                            "location": "features/steps/dining_experience_steps.py:29",
+                            "arguments": [
+                                {
+                                    "value": "6",
+                                    "name": "total_quantity"
+                                }
+                            ]
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 8.58306884765625e-05
+                        }
+                    },
+                    {
+                        "keyword": "Then",
+                        "step_type": "then",
+                        "name": "the system should apply a \"10\" percent discount to the total cost",
+                        "location": "features/dining_experience.feature:20",
+                        "match": {
+                            "location": "features/steps/dining_experience_steps.py:34",
+                            "arguments": [
+                                {
+                                    "value": "10",
+                                    "name": "discount"
+                                }
+                            ]
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 5.888938903808594e-05
+                        }
+                    }
+                ],
+                "status": "passed"
+            },
+            {
+                "type": "scenario",
+                "keyword": "Scenario",
+                "name": "Calculate total cost for a specific meal",
+                "tags": [],
+                "location": "features/dining_experience.feature:21",
+                "steps": [
+                    {
+                        "keyword": "Given",
+                        "step_type": "given",
+                        "name": "the system has a meal \"Pizza familiar\"",
+                        "location": "features/dining_experience.feature:22",
+                        "match": {
+                            "location": "features/steps/dining_experience_steps.py:4",
+                            "arguments": [
+                                {
+                                    "value": "Pizza familiar",
+                                    "name": "meal"
+                                }
+                            ]
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 4.6253204345703125e-05
+                        }
+                    },
+                    {
+                        "keyword": "When",
+                        "step_type": "when",
+                        "name": "the user orders \"2\" of the meal",
+                        "location": "features/dining_experience.feature:23",
+                        "match": {
+                            "location": "features/steps/dining_experience_steps.py:40",
+                            "arguments": [
+                                {
+                                    "value": "2",
+                                    "name": "quantity"
+                                }
+                            ]
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 6.794929504394531e-05
+                        }
+                    },
+                    {
+                        "keyword": "Then",
+                        "step_type": "then",
+                        "name": "the system should calculate the total cost as \"40\"",
+                        "location": "features/dining_experience.feature:24",
+                        "match": {
+                            "location": "features/steps/dining_experience_steps.py:44",
+                            "arguments": [
+                                {
+                                    "value": "40",
+                                    "name": "total_cost"
+                                }
+                            ]
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 4.792213439941406e-05
+                        }
+                    }
+                ],
+                "status": "passed"
+            },
+            {
+                "type": "scenario",
+                "keyword": "Scenario",
+                "name": "User attempts to order more than the maximum quantity",
+                "tags": [],
+                "location": "features/dining_experience.feature:25",
+                "steps": [
+                    {
+                        "keyword": "Given",
+                        "step_type": "given",
+                        "name": "the system has a meal \"Pizza familiar\"",
+                        "location": "features/dining_experience.feature:26",
+                        "match": {
+                            "location": "features/steps/dining_experience_steps.py:4",
+                            "arguments": [
+                                {
+                                    "value": "Pizza familiar",
+                                    "name": "meal"
+                                }
+                            ]
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 4.458427429199219e-05
+                        }
+                    },
+                    {
+                        "keyword": "When",
+                        "step_type": "when",
+                        "name": "the user enters a total quantity \"101\" for the order",
+                        "location": "features/dining_experience.feature:27",
+                        "match": {
+                            "location": "features/steps/dining_experience_steps.py:50",
+                            "arguments": [
+                                {
+                                    "value": "101",
+                                    "name": "total_quantity"
+                                }
+                            ]
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 9.107589721679688e-05
+                        }
+                    },
+                    {
+                        "keyword": "Then",
+                        "step_type": "then",
+                        "name": "the system should not accept the total quantity and display an error message",
+                        "location": "features/dining_experience.feature:28",
+                        "match": {
+                            "location": "features/steps/dining_experience_steps.py:55",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 5.412101745605469e-05
+                        }
+                    }
+                ],
+                "status": "passed"
+            }
+        ]
+    }
 ]
