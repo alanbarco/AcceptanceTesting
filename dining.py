@@ -99,11 +99,9 @@ def validate_amount(client_order):
         raise ValueError("ERROR: La cantidad de las órdenes debe ser menor a 100. La cantidad que tiene es: " + str(total_amount))
 
 def validate_qty(meal_qty):
-    if meal_qty < 0:
-        client_order.popitem()
+    if meal_qty <= 0:
         raise ValueError("ERROR: La cantidad debe ser positiva!")
     if meal_qty > 100:
-        client_order.popitem()
         raise ValueError("ERROR: La cantidad de las órdenes debe ser menor a 100")
 
 
@@ -114,8 +112,7 @@ def display_order_summary(client_order):
         print(amount, "\t", meals)
         
     total_cost = calc_final_total_cost(client_order)
-    
-    print(f"Total a pagar: ${total_cost}")
+    return total_cost
     
 
 def print_menu():
@@ -152,7 +149,9 @@ def change_order(i_meal,i_opt):
                 remove_meal(meal)
         elif i_opt == 2:
             modify_meal(meal)
-    display_order_summary(client_order)
+    total_cost=display_order_summary(client_order)
+    print(f"Total a pagar: ${total_cost}")
+
     confirmation_user()
     
 def remove_meal(meal):
@@ -225,7 +224,9 @@ if __name__ == '__main__':
             else:
                 break
 
-        display_order_summary(client_order)
+        total_cost=display_order_summary(client_order)
+        print(f"Total a pagar: ${total_cost}")
+
         print("Opcion -1 para Finalizar orden")
 
     while True:
